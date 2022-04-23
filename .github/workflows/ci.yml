@@ -34,6 +34,7 @@ jobs:
           git clone --depth 1 https://github.com/nvim-lua/plenary.nvim rtps/plenary.nvim
           git clone --depth 1 https://github.com/nvim-telescope/telescope.nvim rtps/telescope.nvim
           git clone --depth 1 https://github.com/tami5/sqlite.lua.git rtps/sqlite.lua
+      - uses: mxschmitt/action-tmate@v3
       - name: Run tests
         run: |
             export PATH="${PWD}/build/:${PATH}"
